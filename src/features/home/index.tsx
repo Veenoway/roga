@@ -5,11 +5,6 @@ import { useOpenStore } from "@/store/useConnectionStore";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useAccount } from "wagmi";
 
-interface DiscoImage {
-  src: string;
-  zone: number;
-}
-
 interface SpecialImageData {
   src: string;
   probability: number;
