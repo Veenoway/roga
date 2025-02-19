@@ -44,7 +44,7 @@ interface ZoneDimensions {
   height: number;
 }
 
-const DISCO_IMAGES: DiscoImage[] = [
+const DISCO_IMAGES = [
   { src: "image1.png", zone: 2 },
   { src: "image2.png", zone: 3 },
   { src: "image3.png", zone: 1 },
@@ -63,7 +63,7 @@ const DISCO_IMAGES: DiscoImage[] = [
   { src: "image16.png", zone: 3 },
 ];
 
-const SPECIAL_IMAGES_DATA: SpecialImageData[] = [
+const SPECIAL_IMAGES_DATA = [
   { src: "special1.png", probability: 10 },
   { src: "special2.png", probability: 5 },
   { src: "special3.png", probability: 2 },
@@ -74,6 +74,7 @@ const SPECIAL_IMAGES_DATA: SpecialImageData[] = [
   { src: "special8.png", probability: 0.0001 },
 ];
 
+// Exemples de morceaux et lyrics
 const TRACKS: Track[] = [
   {
     src: "song1.mp3",
@@ -148,10 +149,190 @@ const TRACKS: Track[] = [
       "Let's dance !",
     ],
   },
-  // ... (autres morceaux)
+  {
+    src: "song2.mp3",
+    lyrics: [
+      "Listen to the ground",
+      "There is movement all around",
+      "There is something goin' down",
+      "And I can feel it",
+      "",
+      "On the waves of the air",
+      "There is dancin' out there",
+      "If it's somethin' we can share",
+      "We can steal it",
+      "",
+      "And that sweet city woman",
+      "She moves through the light",
+      "Controlling my mind and my soul",
+      "When you reach out for me",
+      "Yeah, and the feelin' is right",
+      "",
+      "Then I get night fever, night fever",
+      "We know how to do it",
+      "Gimme that night fever, night fever",
+      "We know how to show it",
+      "",
+      "Here I am",
+      "Prayin' for this moment to last",
+      "Livin' on the music so fine",
+      "Borne on the wind",
+      "Makin' it mine",
+      "",
+      "Night fever, night fever",
+      "We know how to do it",
+      "Gimme that night fever, night fever",
+      "We know how to show it",
+      "",
+      "In the heat of our love",
+      "Don't need no help for us to make it",
+      "Gimme just enough to take us to the mornin'",
+      "I got fire in my mind",
+      "I get higher in my walkin'",
+      "And I'm glowin' in the dark",
+      "Give you warnin'",
+      "",
+      "And that sweet city woman",
+      "She moves through the night",
+      "Controlling my mind and my soul",
+      "When you reach out for me",
+      "Yeah, and the feelin' is right",
+      "",
+      "That night fever, night fever",
+      "We know how to do it",
+      "Gimme that night fever, night fever",
+      "We know how to show it",
+      "",
+      "Here I am",
+      "Prayin' for this moment to last",
+      "Livin' on the music so fine",
+      "Borne on the wind",
+      "Makin' it mine",
+      "",
+      "Night fever, night fever",
+      "We know how to do it",
+      "Gimme that night fever, night fever",
+      "We know how to show it",
+      "",
+      "Gimme that night fever, night fever",
+      "We know how to do it",
+    ],
+  },
+  {
+    src: "song3.mp3",
+    lyrics: [
+      "Dance, Boogie Wonderland, hey, hey",
+      "Dance, Boogie Wonderland",
+      "",
+      "Midnight creeps so slowly into hearts of men",
+      "Who need more than they get",
+      "Daylight deals a bad hand to a woman",
+      "Who has laid too many bets",
+      "",
+      "The mirror stares you in the face and says",
+      '"Baby, uh, uh, it don’t work"',
+      "You say your prayers though you don't care",
+      "You dance and shake the hat",
+      "",
+      "Dance, Boogie Wonderland, hey, hey",
+      "Dance, Boogie Wonderland",
+      "",
+      "Sound fly through the night",
+      "I chase my vinyl dreams to Boogie Wonderland",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "",
+      "All the love in the world can't be gone",
+      "All the need to be loved can't be wrong",
+      "All the records are playing and my heart keeps saying",
+      '"Boogie Wonderland, Wonderland"',
+      "",
+      "Dance, Boogie Wonderland, hey, hey",
+      "Dance, Boogie Wonderland, hey, hey",
+      "",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "Dance, dance (Boogie Wonderland), dance, dance",
+      "Dance, dance (Boogie Wonderland), dance, dance",
+      "",
+      "Wonderland",
+      "Wonderland",
+      "",
+      "All the love in the world can't be gone (love in the world can't be gone)",
+      "All the need to be loved can't be wrong (need to be loved can't be wrong)",
+      "All the records are playing and my heart keeps saying",
+      "Boogie Wonderland, Wonderland",
+      "",
+      "Dance, Boogie Wonderland, hey, hey",
+      "Dance, Boogie Wonderland, hey, hey",
+      "",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "I find romance when I start to dance in Boogie Wonderland",
+      "Dance, dance, dance (Boogie Wonderland), dance, dance, dance, dance",
+      "Dance, dance (Boogie Wonderland), dance",
+    ],
+  },
+  {
+    src: "song4.mp3",
+    lyrics: [
+      "Do you remember",
+      "The 21st night of September?",
+      "Love was changin' the minds of pretenders",
+      "While chasin' the clouds away",
+      "",
+      "Our hearts were ringin'",
+      "In the key that our souls were singin'",
+      "As we danced in the night, remember",
+      "How the stars stole the night away, oh, yeah",
+      "",
+      "Hey, hey, hey",
+      "Ba-dee-ya, say, do you remember?",
+      "Ba-dee-ya, dancin' in September",
+      "Ba-dee-ya, never was a cloudy day",
+      "",
+      "Ba-du-da, ba-du-da, ba-du-da, ba-du",
+      "Ba-du-da, ba-du, ba-du-da, ba-du",
+      "Ba-du-da, ba-du, ba-du-da",
+      "",
+      "My thoughts are with you",
+      "Holdin' hands with your heart to see you",
+      "Only blue talk and love, remember",
+      "How we knew love was here to stay",
+      "",
+      "Now December",
+      "Found the love that we shared in September",
+      "Only blue talk and love, remember",
+      "The true love we share today",
+      "",
+      "Hey, hey, hey",
+      "Ba-dee-ya, say, do you remember?",
+      "Ba-dee-ya, dancin' in September",
+      "Ba-dee-ya, never was a cloudy day",
+      "There was a",
+      "Ba-dee-ya (dee-ya, dee-ya), say, do you remember?",
+      "Ba-dee-ya (dee-ya, dee-ya), dancin' in September",
+      "Ba-dee-ya (dee-ya, dee-ya), golden dreams were shiny days",
+      "",
+      "The bell was ringin', oh, oh",
+      "Our souls were singin'",
+      "Do you remember never a cloudy day? Yow",
+      "",
+      "There was a",
+      "Ba-dee-ya (dee-ya, dee-ya), say, do you remember?",
+      "Ba-dee-ya (dee-ya, dee-ya), dancin' in September",
+      "Ba-dee-ya (dee ya, dee-ya), golden dreams were shiny days",
+      "",
+      "Ba-dee-ya, dee-ya, dee-ya",
+      "Ba-dee-ya, dee-ya, dee-ya",
+      "Ba-dee-ya, dee-ya, dee-ya, dee-ya!",
+      "Ba-dee-ya, dee-ya, dee-ya",
+      "Ba-dee-ya, dee-ya, dee-ya",
+      "Ba-dee-ya, dee-ya, dee-ya, dee-ya!",
+    ],
+  },
 ];
 
-const TILE_COLORS: string[] = [
+const TILE_COLORS = [
   "#FF00FF",
   "#DA70D6",
   "#9370DB",
@@ -162,7 +343,7 @@ const TILE_COLORS: string[] = [
   "#00FFFF",
 ];
 
-const BACKGROUND_COLORS: string[] = [
+const BACKGROUND_COLORS = [
   "#FF1493",
   "#FF69B4",
   "#FF00FF",
@@ -202,15 +383,21 @@ const BACKGROUND_COLORS: string[] = [
   "#F4C2F4",
 ];
 
+const useLastImageIndex = () => {
+  return useRef<{ [zone: number]: number }>({});
+};
+
 export const Home: React.FC = () => {
   const { address } = useAccount();
   const { setOpen } = useOpenStore();
   const { click } = useRelayer();
-  // Référence du conteneur principal
+
+  // Références pour le conteneur principal et la grille du dancefloor
   const containerRef = useRef<HTMLDivElement>(null);
-  // Référence de la grille (dancefloor)
   const dancefloorRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  const lastImageIndexPerZone = useLastImageIndex();
 
   const [clickCount, setClickCount] = useState<number>(0);
   const [gridSize, setGridSize] = useState<number>(
@@ -233,12 +420,11 @@ export const Home: React.FC = () => {
   >([]);
   const [showPopup, setShowPopup] = useState<boolean>(true);
 
-  const lastDiscoImageRef = useRef<string | null>(null);
   const specialImagesRef = useRef<SpecialImage[]>(
     SPECIAL_IMAGES_DATA.map((img) => ({ ...img, triggered: false }))
   );
 
-  // Recalcule la grille au redimensionnement
+  // Recalcule la grille lors d'un redimensionnement
   useEffect(() => {
     const handleResize = () => {
       const newSize = window.innerWidth <= 768 ? 12 : 15;
@@ -273,7 +459,7 @@ export const Home: React.FC = () => {
     setBackgroundGradient(`linear-gradient(${angle}deg, ${color1}, ${color2})`);
   };
 
-  // Calcule la zone (dimensions et position) de la grille (dancefloor) en viewport
+  // Calcule les dimensions (en viewport) d'une zone sur la grille
   const getZoneDimensions = (zoneNumber: number): ZoneDimensions | null => {
     if (!dancefloorRef.current) return null;
     const rect = dancefloorRef.current.getBoundingClientRect();
@@ -303,7 +489,7 @@ export const Home: React.FC = () => {
     return zone;
   };
 
-  // Calcule la position de l'image disco par rapport au conteneur principal
+  // Sélectionne séquentiellement une image disco dans une zone
   const createSingleImage = () => {
     const zoneNumber = Math.floor(Math.random() * 3) + 1;
     const zone = getZoneDimensions(zoneNumber);
@@ -311,20 +497,23 @@ export const Home: React.FC = () => {
     const availableImages = DISCO_IMAGES.filter(
       (img) => img.zone === zoneNumber
     );
-    let chosenImage: DiscoImage;
-    if (availableImages.length > 1) {
-      do {
-        chosenImage =
-          availableImages[Math.floor(Math.random() * availableImages.length)];
-      } while (chosenImage.src === lastDiscoImageRef.current);
+
+    // Initialisation de l'indice pour la zone si nécessaire
+    if (lastImageIndexPerZone.current[zoneNumber] === undefined) {
+      lastImageIndexPerZone.current[zoneNumber] = 0;
     } else {
-      chosenImage = availableImages[0];
+      // Incrémente l'indice et boucle
+      lastImageIndexPerZone.current[zoneNumber] =
+        (lastImageIndexPerZone.current[zoneNumber] + 1) %
+        availableImages.length;
     }
-    lastDiscoImageRef.current = chosenImage.src;
+    const chosenImage =
+      availableImages[lastImageIndexPerZone.current[zoneNumber]];
+
     const imgWidth = 250;
-    const imgHeight = 250;
+    const imgHeight = 135;
     const randomFactor = 1 - Math.pow(Math.random(), 2);
-    // Calcul en viewport (basé sur la zone)
+    // Calcul en viewport basé sur la zone
     const randomX =
       zone.left + randomFactor * Math.max(0, zone.width - imgWidth);
     const randomY =
@@ -336,7 +525,7 @@ export const Home: React.FC = () => {
     setDiscoImage({
       src: chosenImage.src,
       x: relativeX,
-      y: relativeY - 50, // ajustement vertical pour positionner correctement
+      y: relativeY,
     });
   };
 
@@ -624,55 +813,43 @@ export const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* Overlay pour les images, positionné directement dans le conteneur principal */}
-        <div
-          className="image-overlay"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 9999,
-            pointerEvents: "none",
-          }}
-        >
-          {discoImage && (
-            <img
-              src={discoImage.src}
-              alt="Disco"
-              style={{
-                position: "absolute",
-                transform: "translate(-50%, -50%)",
-                zIndex: 9999,
-                width: 250,
-                height: "auto",
-                objectFit: "contain",
-                left: discoImage.x,
-                top: discoImage.y,
-              }}
-            />
-          )}
-          {specialImagesOnScreen.map((img) => (
-            <img
-              key={img.id}
-              src={img.src}
-              alt="Special"
-              style={{
-                position: "absolute",
-                transform: "translate(-50%, -50%)",
-                zIndex: 9999,
-                cursor: "pointer",
-                width: 200,
-                height: "auto",
-                objectFit: "contain",
-                left: img.x,
-                top: img.y,
-              }}
-              onClick={(e) => collectSpecialImage(img.id, img.src, e)}
-            />
-          ))}
-        </div>
+        {/* Overlay pour les images, placé directement dans le conteneur principal */}
+        {discoImage && (
+          <img
+            src={discoImage.src}
+            alt="Disco"
+            style={{
+              position: "absolute",
+              transform: "translate(-50%, -50%)",
+              zIndex: 9999,
+              width: 250,
+              height: "auto",
+              objectFit: "contain",
+              left: discoImage.x,
+              top: discoImage.y,
+              pointerEvents: "none",
+            }}
+          />
+        )}
+        {specialImagesOnScreen.map((img) => (
+          <img
+            key={img.id}
+            src={img.src}
+            alt="Special"
+            style={{
+              position: "absolute",
+              transform: "translate(-50%, -50%)",
+              zIndex: 9999,
+              cursor: "pointer",
+              width: 200,
+              height: "auto",
+              objectFit: "contain",
+              left: img.x,
+              top: img.y,
+            }}
+            onClick={(e) => collectSpecialImage(img.id, img.src, e)}
+          />
+        ))}
         <div
           id="tx-counter"
           style={{
@@ -823,7 +1000,7 @@ export const Home: React.FC = () => {
             height: 450,
             padding: 10,
             borderRadius: 5,
-            zIndex: 10000,
+            zIndex: 1000000,
             display: "flex",
             flexDirection: "column",
             boxSizing: "border-box",
