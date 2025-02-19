@@ -1029,7 +1029,7 @@ export const Home: React.FC = () => {
         </div>
         <audio ref={audioRef} loop style={{ display: "none" }} />
         <a
-          href="https://twitter.com/VotreCompteTwitter"
+          href="https://x.com/DISCOMONAD"
           target="_blank"
           rel="noopener noreferrer"
           id="twitter-logo"
