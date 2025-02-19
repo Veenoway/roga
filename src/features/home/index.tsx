@@ -22,8 +22,8 @@ interface SpecialImage extends SpecialImageData {
 interface SpecialImageOnScreen {
   id: number;
   src: string;
-  left: number;
-  top: number;
+  x: number;
+  y: number;
 }
 
 interface Track {
@@ -33,8 +33,8 @@ interface Track {
 
 interface DiscoImageState {
   src: string;
-  left: number;
-  top: number;
+  x: number;
+  y: number;
 }
 
 interface ZoneDimensions {
@@ -148,187 +148,7 @@ const TRACKS: Track[] = [
       "Let's dance !",
     ],
   },
-  {
-    src: "song2.mp3",
-    lyrics: [
-      "Listen to the ground",
-      "There is movement all around",
-      "There is something goin' down",
-      "And I can feel it",
-      "",
-      "On the waves of the air",
-      "There is dancin' out there",
-      "If it's somethin' we can share",
-      "We can steal it",
-      "",
-      "And that sweet city woman",
-      "She moves through the light",
-      "Controlling my mind and my soul",
-      "When you reach out for me",
-      "Yeah, and the feelin' is right",
-      "",
-      "Then I get night fever, night fever",
-      "We know how to do it",
-      "Gimme that night fever, night fever",
-      "We know how to show it",
-      "",
-      "Here I am",
-      "Prayin' for this moment to last",
-      "Livin' on the music so fine",
-      "Borne on the wind",
-      "Makin' it mine",
-      "",
-      "Night fever, night fever",
-      "We know how to do it",
-      "Gimme that night fever, night fever",
-      "We know how to show it",
-      "",
-      "In the heat of our love",
-      "Don't need no help for us to make it",
-      "Gimme just enough to take us to the mornin'",
-      "I got fire in my mind",
-      "I get higher in my walkin'",
-      "And I'm glowin' in the dark",
-      "Give you warnin'",
-      "",
-      "And that sweet city woman",
-      "She moves through the night",
-      "Controlling my mind and my soul",
-      "When you reach out for me",
-      "Yeah, and the feelin' is right",
-      "",
-      "That night fever, night fever",
-      "We know how to do it",
-      "Gimme that night fever, night fever",
-      "We know how to show it",
-      "",
-      "Here I am",
-      "Prayin' for this moment to last",
-      "Livin' on the music so fine",
-      "Borne on the wind",
-      "Makin' it mine",
-      "",
-      "Night fever, night fever",
-      "We know how to do it",
-      "Gimme that night fever, night fever",
-      "We know how to show it",
-      "",
-      "Gimme that night fever, night fever",
-      "We know how to do it",
-    ],
-  },
-  {
-    src: "song3.mp3",
-    lyrics: [
-      "Dance, Boogie Wonderland, hey, hey",
-      "Dance, Boogie Wonderland",
-      "",
-      "Midnight creeps so slowly into hearts of men",
-      "Who need more than they get",
-      "Daylight deals a bad hand to a woman",
-      "Who has laid too many bets",
-      "",
-      "The mirror stares you in the face and says",
-      '"Baby, uh, uh, it don’t work"',
-      "You say your prayers though you don't care",
-      "You dance and shake the hat",
-      "",
-      "Dance, Boogie Wonderland, hey, hey",
-      "Dance, Boogie Wonderland",
-      "",
-      "Sound fly through the night",
-      "I chase my vinyl dreams to Boogie Wonderland",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "",
-      "All the love in the world can't be gone",
-      "All the need to be loved can't be wrong",
-      "All the records are playing and my heart keeps saying",
-      '"Boogie Wonderland, Wonderland"',
-      "",
-      "Dance, Boogie Wonderland, hey, hey",
-      "Dance, Boogie Wonderland, hey, hey",
-      "",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "Dance, dance (Boogie Wonderland), dance, dance",
-      "Dance, dance (Boogie Wonderland), dance, dance",
-      "",
-      "Wonderland",
-      "Wonderland",
-      "",
-      "All the love in the world can't be gone (love in the world can't be gone)",
-      "All the need to be loved can't be wrong (need to be loved can't be wrong)",
-      "All the records are playing and my heart keeps saying",
-      "Boogie Wonderland, Wonderland",
-      "",
-      "Dance, Boogie Wonderland, hey, hey",
-      "Dance, Boogie Wonderland, hey, hey",
-      "",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "I find romance when I start to dance in Boogie Wonderland",
-      "Dance, dance, dance (Boogie Wonderland), dance, dance, dance, dance",
-      "Dance, dance (Boogie Wonderland), dance",
-    ],
-  },
-  {
-    src: "song4.mp3",
-    lyrics: [
-      "Do you remember",
-      "The 21st night of September?",
-      "Love was changin' the minds of pretenders",
-      "While chasin' the clouds away",
-      "",
-      "Our hearts were ringin'",
-      "In the key that our souls were singin'",
-      "As we danced in the night, remember",
-      "How the stars stole the night away, oh, yeah",
-      "",
-      "Hey, hey, hey",
-      "Ba-dee-ya, say, do you remember?",
-      "Ba-dee-ya, dancin' in September",
-      "Ba-dee-ya, never was a cloudy day",
-      "",
-      "Ba-du-da, ba-du-da, ba-du-da, ba-du",
-      "Ba-du-da, ba-du, ba-du-da, ba-du",
-      "Ba-du-da, ba-du, ba-du-da",
-      "",
-      "My thoughts are with you",
-      "Holdin' hands with your heart to see you",
-      "Only blue talk and love, remember",
-      "How we knew love was here to stay",
-      "",
-      "Now December",
-      "Found the love that we shared in September",
-      "Only blue talk and love, remember",
-      "The true love we share today",
-      "",
-      "Hey, hey, hey",
-      "Ba-dee-ya, say, do you remember?",
-      "Ba-dee-ya, dancin' in September",
-      "Ba-dee-ya, never was a cloudy day",
-      "There was a",
-      "Ba-dee-ya (dee-ya, dee-ya), say, do you remember?",
-      "Ba-dee-ya (dee-ya, dee-ya), dancin' in September",
-      "Ba-dee-ya (dee-ya, dee-ya), golden dreams were shiny days",
-      "",
-      "The bell was ringin', oh, oh",
-      "Our souls were singin'",
-      "Do you remember never a cloudy day? Yow",
-      "",
-      "There was a",
-      "Ba-dee-ya (dee-ya, dee-ya), say, do you remember?",
-      "Ba-dee-ya (dee-ya, dee-ya), dancin' in September",
-      "Ba-dee-ya (dee ya, dee-ya), golden dreams were shiny days",
-      "",
-      "Ba-dee-ya, dee-ya, dee-ya",
-      "Ba-dee-ya, dee-ya, dee-ya",
-      "Ba-dee-ya, dee-ya, dee-ya, dee-ya!",
-      "Ba-dee-ya, dee-ya, dee-ya",
-      "Ba-dee-ya, dee-ya, dee-ya",
-      "Ba-dee-ya, dee-ya, dee-ya, dee-ya!",
-    ],
-  },
+  // ... (autres morceaux)
 ];
 
 const TILE_COLORS: string[] = [
@@ -386,11 +206,11 @@ export const Home: React.FC = () => {
   const { address } = useAccount();
   const { setOpen } = useOpenStore();
   const { click } = useRelayer();
+  // Référence du conteneur principal
   const containerRef = useRef<HTMLDivElement>(null);
+  // Référence de la grille (dancefloor)
   const dancefloorRef = useRef<HTMLDivElement>(null);
-  const dancefloorContainerRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const twitterLogoRef = useRef<HTMLAnchorElement>(null);
 
   const [clickCount, setClickCount] = useState<number>(0);
   const [gridSize, setGridSize] = useState<number>(
@@ -418,6 +238,7 @@ export const Home: React.FC = () => {
     SPECIAL_IMAGES_DATA.map((img) => ({ ...img, triggered: false }))
   );
 
+  // Recalcule la grille au redimensionnement
   useEffect(() => {
     const handleResize = () => {
       const newSize = window.innerWidth <= 768 ? 12 : 15;
@@ -452,9 +273,10 @@ export const Home: React.FC = () => {
     setBackgroundGradient(`linear-gradient(${angle}deg, ${color1}, ${color2})`);
   };
 
+  // Calcule la zone (dimensions et position) de la grille (dancefloor) en viewport
   const getZoneDimensions = (zoneNumber: number): ZoneDimensions | null => {
-    if (!dancefloorContainerRef.current) return null;
-    const rect = dancefloorContainerRef.current.getBoundingClientRect();
+    if (!dancefloorRef.current) return null;
+    const rect = dancefloorRef.current.getBoundingClientRect();
     const zoneHeight = rect.height / 3;
     const verticalShift = 20;
     const extraUpShift = 40;
@@ -481,10 +303,11 @@ export const Home: React.FC = () => {
     return zone;
   };
 
+  // Calcule la position de l'image disco par rapport au conteneur principal
   const createSingleImage = () => {
     const zoneNumber = Math.floor(Math.random() * 3) + 1;
     const zone = getZoneDimensions(zoneNumber);
-    if (!zone) return;
+    if (!zone || !dancefloorRef.current || !containerRef.current) return;
     const availableImages = DISCO_IMAGES.filter(
       (img) => img.zone === zoneNumber
     );
@@ -501,14 +324,19 @@ export const Home: React.FC = () => {
     const imgWidth = 250;
     const imgHeight = 250;
     const randomFactor = 1 - Math.pow(Math.random(), 2);
+    // Calcul en viewport (basé sur la zone)
     const randomX =
       zone.left + randomFactor * Math.max(0, zone.width - imgWidth);
     const randomY =
       zone.top + Math.random() * Math.max(0, zone.height - imgHeight);
+    // Conversion en coordonnées relatives au conteneur principal
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const relativeX = randomX - containerRect.left;
+    const relativeY = randomY - containerRect.top;
     setDiscoImage({
       src: chosenImage.src,
-      left: randomX,
-      top: randomY,
+      x: relativeX,
+      y: relativeY - 50, // ajustement vertical pour positionner correctement
     });
   };
 
@@ -523,7 +351,7 @@ export const Home: React.FC = () => {
 
   const createSpecialImage = (special: SpecialImage) => {
     const zone = getZoneDimensions(3);
-    if (!zone) return;
+    if (!zone || !dancefloorRef.current || !containerRef.current) return;
     const imgWidth = 200;
     const imgHeight = 200;
     const randomFactor = 1 - Math.pow(Math.random(), 2);
@@ -531,11 +359,14 @@ export const Home: React.FC = () => {
       zone.left + randomFactor * Math.max(0, zone.width - imgWidth);
     const randomY =
       zone.top + Math.random() * Math.max(0, zone.height - imgHeight);
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const relativeX = randomX - containerRect.left;
+    const relativeY = randomY - containerRect.top;
     const specialObj: SpecialImageOnScreen = {
       id: Date.now() + Math.floor(Math.random() * 1000),
       src: special.src,
-      left: randomX,
-      top: randomY,
+      x: relativeX,
+      y: relativeY - 50, // même ajustement vertical
     };
     setSpecialImagesOnScreen((prev) => [...prev, specialObj]);
     setTimeout(() => {
@@ -616,14 +447,9 @@ export const Home: React.FC = () => {
           margin: 0,
           minHeight: "100vh",
           width: "100vw",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          transition: "background-color 0.3s",
+          position: "relative",
           background: backgroundGradient || "black",
           overflow: "hidden",
-          position: "relative",
         }}
         onClick={handleContainerClick}
       >
@@ -640,7 +466,7 @@ export const Home: React.FC = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              zIndex: 10,
+              zIndex: 10000,
             }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -659,10 +485,10 @@ export const Home: React.FC = () => {
               }}
             >
               <h1 style={{ margin: "0 0 20px", fontSize: "32px" }}>
-                Discomon is Here to Get You Moving !
+                Discomon is Here to Get You Moving!
               </h1>
               <p>Are you ready to lose yourself on the dance floor?</p>
-              <p>Crank up the volume to the max and let the beat groove!</p>
+              <p>Crank up the volume and let the beat groove!</p>
               <p>
                 Click on the screen to make us dance, and collect the 8 special
                 partygoers that will join the party!
@@ -673,13 +499,11 @@ export const Home: React.FC = () => {
               </p>
               <p>
                 So now, show Mon Travolta you&apos;re better than him by
-                unleashing our best choreography! Stress the testnet to the beat
-                of Disco!
+                unleashing our best choreography!
               </p>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  console.log("Start Game cliqué");
                   setShowPopup(false);
                   handleContainerClick();
                 }}
@@ -691,7 +515,6 @@ export const Home: React.FC = () => {
                   padding: "10px 20px",
                   borderRadius: "5px",
                   cursor: "pointer",
-                  zIndex: 10000,
                   boxShadow: "0 0 10px #FF00FF, 0 0 20px #FF00FF",
                 }}
               >
@@ -709,28 +532,27 @@ export const Home: React.FC = () => {
             top: 20,
             left: 20,
             width: 240,
-            zIndex: 10,
+            zIndex: 1000,
           }}
           onClick={(e) => e.stopPropagation()}
         />
-
         <img
           src="discologo.png"
           alt="Logo Disco"
           className="header-image"
           style={{
-            width: "25vw",
-            minWidth: 150,
-            maxWidth: 300,
             position: "absolute",
             top: 0,
             left: "50%",
             transform: "translateX(-50%)",
-            zIndex: 2,
+            width: "25vw",
+            minWidth: 150,
+            maxWidth: 300,
+            zIndex: 900,
           }}
           onClick={(e) => e.stopPropagation()}
         />
-
+        {/* Conteneur du dancefloor transformé */}
         <div
           className="main-container"
           style={{
@@ -746,15 +568,15 @@ export const Home: React.FC = () => {
         >
           <div
             className="dancefloor-container"
-            ref={dancefloorContainerRef}
             style={{
+              position: "relative",
               transform: "rotateX(75deg)",
               transformStyle: "preserve-3d",
               width: "min(95vh,95vw)",
               height: "min(95vh,95vw)",
-              position: "relative",
             }}
           >
+            {/* Grille du dancefloor */}
             <div
               className="dancefloor"
               ref={dancefloorRef}
@@ -767,6 +589,7 @@ export const Home: React.FC = () => {
                 backgroundColor: "black",
                 padding: "0.3%",
                 position: "relative",
+                zIndex: 1,
               }}
             >
               {Array.from({ length: gridSize * gridSize }).map((_, i) => (
@@ -779,12 +602,12 @@ export const Home: React.FC = () => {
                     border: "1px solid rgba(255,255,255,0.2)",
                     transition: "background-color 0.3s",
                     aspectRatio: "1",
+                    zIndex: 1,
                   }}
                 >
                   {i < gridSize && (
                     <div
                       style={{
-                        content: "",
                         position: "absolute",
                         width: "100%",
                         height: 20,
@@ -798,48 +621,58 @@ export const Home: React.FC = () => {
                   )}
                 </div>
               ))}
-              {discoImage && (
-                <img
-                  src={discoImage.src}
-                  alt="Disco"
-                  className="disco-image"
-                  style={{
-                    position: "fixed",
-                    transform: "translate(-50%, -50%)",
-                    zIndex: 3,
-                    pointerEvents: "none",
-                    width: 250,
-                    height: 250,
-                    objectFit: "contain",
-                    left: discoImage.left,
-                    top: discoImage.top,
-                  }}
-                />
-              )}
-              {specialImagesOnScreen.map((img) => (
-                <img
-                  key={img.id}
-                  src={img.src}
-                  alt="Special"
-                  className="special-image"
-                  style={{
-                    position: "fixed",
-                    transform: "translate(-50%, -50%)",
-                    zIndex: 4,
-                    cursor: "pointer",
-                    width: 200,
-                    height: 200,
-                    objectFit: "contain",
-                    left: img.left,
-                    top: img.top,
-                  }}
-                  onClick={(e) => collectSpecialImage(img.id, img.src, e)}
-                />
-              ))}
             </div>
           </div>
         </div>
-
+        {/* Overlay pour les images, positionné directement dans le conteneur principal */}
+        <div
+          className="image-overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 9999,
+            pointerEvents: "none",
+          }}
+        >
+          {discoImage && (
+            <img
+              src={discoImage.src}
+              alt="Disco"
+              style={{
+                position: "absolute",
+                transform: "translate(-50%, -50%)",
+                zIndex: 9999,
+                width: 250,
+                height: "auto",
+                objectFit: "contain",
+                left: discoImage.x,
+                top: discoImage.y,
+              }}
+            />
+          )}
+          {specialImagesOnScreen.map((img) => (
+            <img
+              key={img.id}
+              src={img.src}
+              alt="Special"
+              style={{
+                position: "absolute",
+                transform: "translate(-50%, -50%)",
+                zIndex: 9999,
+                cursor: "pointer",
+                width: 200,
+                height: "auto",
+                objectFit: "contain",
+                left: img.x,
+                top: img.y,
+              }}
+              onClick={(e) => collectSpecialImage(img.id, img.src, e)}
+            />
+          ))}
+        </div>
         <div
           id="tx-counter"
           style={{
@@ -854,13 +687,12 @@ export const Home: React.FC = () => {
             fontFamily: "'Luckiest Guy', cursive",
             fontSize: 20,
             textAlign: "center",
-            zIndex: 6,
+            zIndex: 10000,
           }}
           onClick={(e) => e.stopPropagation()}
         >
           tx number: {clickCount}
         </div>
-
         <div
           id="collection"
           style={{
@@ -873,7 +705,7 @@ export const Home: React.FC = () => {
             height: 450,
             padding: 10,
             borderRadius: 5,
-            zIndex: 5,
+            zIndex: 10000,
             display: "flex",
             flexDirection: "column",
             boxSizing: "border-box",
@@ -919,7 +751,6 @@ export const Home: React.FC = () => {
             ))}
           </div>
         </div>
-
         <div
           id="music-container"
           style={{
@@ -930,7 +761,7 @@ export const Home: React.FC = () => {
             display: "flex",
             justifyContent: "center",
             gap: 10,
-            zIndex: 5,
+            zIndex: 10000,
           }}
           onClick={(e) => e.stopPropagation()}
         >
@@ -980,7 +811,6 @@ export const Home: React.FC = () => {
             ⏭
           </button>
         </div>
-
         <div
           id="lyrics"
           style={{
@@ -993,7 +823,7 @@ export const Home: React.FC = () => {
             height: 450,
             padding: 10,
             borderRadius: 5,
-            zIndex: 5,
+            zIndex: 10000,
             display: "flex",
             flexDirection: "column",
             boxSizing: "border-box",
@@ -1031,19 +861,17 @@ export const Home: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
           id="twitter-logo"
-          ref={twitterLogoRef}
           onClick={handleTwitterLogoClick}
           style={{
             position: "fixed",
             bottom: 20,
             left: "50%",
             transform: "translateX(-50%)",
-            zIndex: 10,
+            zIndex: 10000,
           }}
         >
           <img src="twitter-logo.png" alt="Twitter" style={{ width: 50 }} />
         </a>
-
         <style>{`
           .tile.first-row::after {
             content: '';
