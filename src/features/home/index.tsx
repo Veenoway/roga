@@ -64,12 +64,11 @@ const SPECIAL_IMAGES_DATA = [
   { src: "special3.png", probability: 2 },
   { src: "special4.png", probability: 1 },
   { src: "special5.png", probability: 0.1 },
-  { src: "special6.png", probability: 0.01 },
-  { src: "special7.png", probability: 0.001 },
-  { src: "special8.png", probability: 0.0001 },
+  { src: "special6.png", probability: 0.3 },
+  { src: "special7.png", probability: 0.5 },
+  { src: "special8.png", probability: 0.7 },
 ];
 
-// Exemples de morceaux et lyrics
 const TRACKS: Track[] = [
   {
     src: "song1.mp3",
@@ -419,7 +418,6 @@ export const Home: React.FC = () => {
     SPECIAL_IMAGES_DATA.map((img) => ({ ...img, triggered: false }))
   );
 
-  // Recalcule la grille lors d'un redimensionnement
   useEffect(() => {
     const handleResize = () => {
       const newSize = window.innerWidth <= 768 ? 12 : 15;
@@ -484,7 +482,6 @@ export const Home: React.FC = () => {
     return zone;
   };
 
-  // Sélectionne séquentiellement une image disco dans une zone
   const createSingleImage = () => {
     const zoneNumber = Math.floor(Math.random() * 3) + 1;
     const zone = getZoneDimensions(zoneNumber);
@@ -493,11 +490,9 @@ export const Home: React.FC = () => {
       (img) => img.zone === zoneNumber
     );
 
-    // Initialisation de l'indice pour la zone si nécessaire
     if (lastImageIndexPerZone.current[zoneNumber] === undefined) {
       lastImageIndexPerZone.current[zoneNumber] = 0;
     } else {
-      // Incrémente l'indice et boucle
       lastImageIndexPerZone.current[zoneNumber] =
         (lastImageIndexPerZone.current[zoneNumber] + 1) %
         availableImages.length;
@@ -520,7 +515,7 @@ export const Home: React.FC = () => {
     setDiscoImage({
       src: chosenImage.src,
       x: relativeX,
-      y: relativeY,
+      y: relativeY, // ajustement vertical
     });
   };
 
@@ -550,7 +545,7 @@ export const Home: React.FC = () => {
       id: Date.now() + Math.floor(Math.random() * 1000),
       src: special.src,
       x: relativeX,
-      y: relativeY - 50, // même ajustement vertical
+      y: relativeY,
     };
     setSpecialImagesOnScreen((prev) => [...prev, specialObj]);
     setTimeout(() => {
@@ -1029,7 +1024,7 @@ export const Home: React.FC = () => {
         </div>
         <audio ref={audioRef} loop style={{ display: "none" }} />
         <a
-          href="https://x.com/DISCOMONAD"
+          href="https://twitter.com/VotreCompteTwitter"
           target="_blank"
           rel="noopener noreferrer"
           id="twitter-logo"
